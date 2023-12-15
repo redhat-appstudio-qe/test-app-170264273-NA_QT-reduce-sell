@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-quarkus-170264273
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/user1-tenant/test-app-170264273/java-quarkus-170264273@sha256:385c685f08516c73419382ba1b28736f60f4a38ba155ee30623e72149e011bcb
+        name: my-java-quarkus
+        resources: {}
+status: {}
